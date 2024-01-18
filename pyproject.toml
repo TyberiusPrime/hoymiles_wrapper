@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "hoymiles-wrapper"
+version = "0.1.0"
+description = "my wrapper around hoymiles-mqtt to request one set of data and fire it off via mqtt\""
+authors = ["Tyberius Prime <Tyberius_Prime@coonabibba.de>"]
+readme = "README.md"
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.11,<3.12"
+hoymiles-mqtt = "^0.5.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.poetry.scripts]
+hoymiles_wrapper = "hoymiles_wrapper:main"
